@@ -10,6 +10,10 @@
 
 
 
+# Awesome esProc SPL [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+A list of awesome resources for esProc SPL.
+
+
 ## About esProc SPL  
 esProc SPL is a programming language. Unlike most text-based programming languages, SPL code is written in a grid similar to Excel, and just like Excel, you can see the execution results step by step in real-time. This reduces the learning curve for beginners and provides an excellent interactive experience:
 ![image](https://www.esproc.com/wp-content/themes/scudata-en/github_esproc_img/1.gif)
