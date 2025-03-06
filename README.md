@@ -11,7 +11,15 @@
 
 
 # Awesome esProc SPL [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-A list of awesome resources for esProc SPL.
+esProc SPL is a grid-based programming language for structured data computation, offering real-time interactivity, concise syntax, and seamless integration with Java applications.
+
+## Contents  
+- [About esProc SPL](#about-esproc-spl)  
+- [Installation](#installation)  
+- [Learning Resources](#learning-resources)  
+- [Technical Highlights](#technical-highlights)  
+- [Documentation](#documentation)
+- [Community](#community)  
 
 
 ## About esProc SPL  
@@ -39,40 +47,40 @@ esProc is developed entirely in Java, allowing it to be seamlessly integrated in
  
 esProc can easily implement lightweight multi-data source hybrid computations, rather than relying on a heavy logical data warehouse, making it an ideal embedded computation engine for report queries and other application systems.  
 
-## Install and start
+## Installation
 
 For open-source users, we have not provided an automatic installation package, but rather a ZIP file. You can find the installation instructions here: https://c.esproc.com/article/1718848717817. Additionally, Eclipse users can find instructions for downloading and running the source code here: https://c.esproc.com/article/1677815008127.  
 For other editions, installation packages can be downloaded from https://www.esproc.com/download-esproc/. No further instructions are necessary, as the installation process is straightforward.  
 
 
-## Learn esProc SPL
+## Learning Resources
 
-This book: [SPL Programming](http://c.esproc.com/article/1634722432114) is a good start for learning SPL syntax. The book intends for beginners who do not have any programming experiences. Look it through quickly if you are a veteran, but the object understanding explained in section 4.4 is worth a study. Chapter 5 is important, too. It explains SPL’s set-oriented way of thinking, which is quite different from the other languages. But once you understand and master SPL, you can write elegant code. Chapters 8-10 are staple of SPL learning. It regards the structured data computations in a different perspective from SQL. This is significant even for the professional programmers! From the SPL point of view, SQL is a little simple in understanding the structured data as the world is complex. **The knowledges you obtained in various database courses are not broad and profound enough! You need a review and brush-up！**
-
-Find basic SPL concepts in this post: [SPL concepts for beginners](https://blog.esproc.com/spl-concepts-for-beginners/). For beginners, you can find characteristic basic computations of SPL in [SPL Operations for Beginners](https://blog.esproc.com/spl-operations-for-beginners/). Experienced programmers can quickly understand the differences between SPL and SQL. A software architect can understand the differences between SPL and traditional databases after reading  [Q&A of esProc Architecture](https://blog.esproc.com/qa-of-esproc-architecture/).
-
-Find comprehensive SPL documentation in  [SPL Learning materials](https://blog.esproc.com/spl-learning-materials/). Generally, an application programmer can get started in handling basic operations from database connection:  [SPL: Connecting to Databases](https://blog.esproc.com/spl-connecting-to-databases/) and database read/write  [SPL: Reading and Writing Database Data](https://blog.esproc.com/spl-reading-and-writing-database-data/) or file access and computation  [SPL: Reading and Writing Structured Text Files](https://blog.esproc.com/spl-reading-and-writing-structured-text-files/). Then you can learn how to integrate SPL in a Java application [How to Call an SPL Script in Java](https://blog.esproc.com/how-to-call-an-spl-script-in-java/). Those make a simple learning loop.
-
-High-performance computations are relatively difficult, but there is a systematic book on algorithms: [Performance Optimization](https://c.esproc.com/article/1641367696194). Performance optimization algorithms are not unique to SPL. You can implement high-performance computations using another programming language (except for SQL) after you learn these algorithms. The key lies in algorithm instead of syntax. Yet, you need to grasp SPL concept and syntax well in order to better understand the algorithms.
-
-The SPL learning posts above also contain applications of the performance optimization algorithms.
-
-Storage forms the cornerstone of high-performance computing. The following post introduces the proprietary storage schema commonly used in SPL for beginners: [How to use SPL storage for beginners](https://blog.esproc.com/how-to-use-spl-storage-for-beginners/). Usually, the first step of performance optimization is designing an appropriate storage schema.
+- [SPL Programming](http://c.esproc.com/article/1634722432114) - Comprehensive guide to SPL syntax and set-oriented thinking. The book intends for beginners who do not have any programming experiences. Look it through quickly if you are a veteran, but the object understanding explained in section 4.4 is worth a study. Chapter 5 is important, too. It explains SPL’s set-oriented way of thinking, which is quite different from the other languages. But once you understand and master SPL, you can write elegant code. Chapters 8-10 are staple of SPL learning. It regards the structured data computations in a different perspective from SQL. This is significant even for the professional programmers! From the SPL point of view, SQL is a little simple in understanding the structured data as the world is complex. **The knowledges you obtained in various database courses are not broad and profound enough! You need a review and brush-up！** 
+- [Performance Optimization](https://c.esproc.com/article/1641367696194) - Algorithms for high-performance computing. You can implement high-performance computations using another programming language (except for SQL) after you learn these algorithms. The key lies in algorithm instead of syntax. Yet, you need to grasp SPL concept and syntax well in order to better understand the algorithms. 
+- [SPL Concepts for Beginners](https://blog.esproc.com/spl-concepts-for-beginners/) - Core concepts explained. For beginners, you can find characteristic basic computations of SPL in [SPL Operations for Beginners](https://blog.esproc.com/spl-operations-for-beginners/). Experienced programmers can quickly understand the differences between SPL and SQL. A software architect can understand the differences between SPL and traditional databases after reading  [Q&A of esProc Architecture](https://blog.esproc.com/qa-of-esproc-architecture/). 
+- [SPL Learning materials](https://blog.esproc.com/spl-learning-materials/) - Comprehensive SPL documentation. Generally, an application programmer can get started in handling basic operations from database connection:  [SPL: Connecting to Databases](https://blog.esproc.com/spl-connecting-to-databases/) and database read/write  [SPL: Reading and Writing Database Data](https://blog.esproc.com/spl-reading-and-writing-database-data/) or file access and computation  [SPL: Reading and Writing Structured Text Files](https://blog.esproc.com/spl-reading-and-writing-structured-text-files/). Then you can learn how to integrate SPL in a Java application [How to Call an SPL Script in Java](https://blog.esproc.com/how-to-call-an-spl-script-in-java/). Those make a simple learning loop.
+- [How to use SPL storage for beginners](https://blog.esproc.com/how-to-use-spl-storage-for-beginners/) - Introduction of the proprietary storage schema commonly used in SPL for beginners. Usually, the first step of performance optimization is designing an appropriate storage schema.
 
 You are welcome to post your troubles and problems when trying to achieve high performance computing and discuss with us to find a solution: [Wanted! Unbearably slow query and batch job](http://www.esproc.com/html/Unbearably-slow-query-and-batch-job.html).
 
 
+## Technical Highlights  
+- **Grid-based Interactivity**: Real-time execution visualization (see [demo](https://try.esproc.com/splx?3VU)).  
+- **Multi-source Integration**: Supports 20+ data sources including RDBs, NoSQL, and REST APIs.  
+- **Java Embedding**: Lightweight library (<5MB) for JVM integration.
 
-## Useful Links
 
-*   esProc Official WebSite: http://www.esproc.com  Forum: http://c.esproc.com/
-*   [Tutorial](http://doc.esproc.com/esproc/tutorial/) esProc download, installation, as well as principles and applications
-*   [Function Reference](http://doc.esproc.com/esproc/func/) esProc syntax, applications and examples
-*   [User Reference](http://doc.esproc.com/esproc/manual/) esProc programming by examples
-*   [External Library Guide](http://doc.esproc.com/esproc/ext/) Deployment of and connection to esProc external libraries
-*   Please head to [Download esProc SPL](https://www.esproc.com/download-esproc/) to download esProc executable files
-*   [How to Get Open-source esProc for Eclipse through Git](http://c.esproc.com/article/1677815008127) 
+## Documentation
 
-## License
+- [esProc Official Website](http://www.esproc.com) - Primary portal for esProc SPL documentation and updates.  
+- [SPL Tutorial](http://doc.esproc.com/esproc/tutorial/) - Comprehensive guide to syntax, principles, and use cases.  
+- [Function Reference](http://doc.esproc.com/esproc/func/) - Complete function library with code examples.  
+- [User Manual](http://doc.esproc.com/esproc/manual/) - Practical programming examples and best practices.  
+- [External Library Guide](http://doc.esproc.com/esproc/ext/) - Connecting and deploying external libraries.  
 
-esProc is under the Apache 2.0 license. See the [LICENSE](./LICENSE) file for details.
+## Community  
+- [Forum](http://c.esproc.com/) - Discuss SPL usage and report issues.  
+- [GitHub Repository](https://github.com/judithliu0-0/awesome-spl#readme) - Contribute to this list.  
+- [Twitter](https://twitter.com/esProc_SPL) - Latest updates.
+- [Discord Server](https://discord.gg/2bkGwqTj) - Chat with SPL developers and users.
+
